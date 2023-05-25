@@ -6,3 +6,8 @@ module "fourkeys" {
   bigquery_region     = var.bigquery_region
   parsers             = var.parsers
 }
+
+provider "google" {
+  project     = var.project_id
+  region      = var.region
+}
